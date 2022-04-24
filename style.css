@@ -148,6 +148,10 @@ box-shadow: 0px 6px 12px var(--lightshadow);
 	color: var(--lightblack);
 }
 
+::-webkit-scrollbar {
+	width: 0%;
+}
+
 .controls{
 	margin: 40px 0 5px 0;
 }
@@ -217,7 +221,7 @@ box-shadow: 0px 6px 12px var(--lightshadow);
 	opacity: 0;
 	pointer-events: none;
 	z-index: 5;
-	padding: 15px 30px;
+	padding: 10px 15px;
 	border-radius: 15px;
 	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
 	transition: all 0.15s ease-out;
