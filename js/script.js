@@ -66,6 +66,16 @@ class MusicPlayer {
 				this.playingSong();
 			}
 		});
+
+		const expandMoreIcon = this.wrapper.querySelector('.top-bar .material-icons');
+		const musicImageArea = this.wrapper.querySelector('.img-area');
+
+		expandMoreIcon.addEventListener("click", () => {
+			this.wrapper.classList.toggle('minimized');
+			const isMinimized = this.wrapper.classList.contains('minimized');
+			expandMoreIcon.textContent = isMinimized ? 'expand_less' : 'expand_more';
+		});
+		
 	}
 
 	loadMusic(indexNumb) {
