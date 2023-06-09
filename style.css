@@ -23,16 +23,18 @@
 }
 
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+	height: 100vh;
 	background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+	overflow-x: hidden;
+}
+
+.content-container {
+	min-height: 75vh;
 }
 
 .wrapper {
 	width: 300px;
-	margin: 3em auto;
+	margin: 15px auto;
 	padding: 25px 30px;
 	overflow: hidden;
 	position: relative;
@@ -97,12 +99,12 @@ body {
 }
 
 .song-details .name {
-	font-size: 21px;
+	font-size: 18px;
 	text-align: center;
 }
 
 .song-details .artist {
-	font-size: 18px;
+	font-size: 16px;
 	opacity: 0.9;
 	line-height: 35px;
 }
