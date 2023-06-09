@@ -1,4 +1,4 @@
-let allMusic = [
+export const allMusic = [
    {
 	  name: "Don't Start Now",
 	  artist: "Dua Lipa",
